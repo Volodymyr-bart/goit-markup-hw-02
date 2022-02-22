@@ -1,0 +1,233 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.header-container {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  display: flex;
+}
+.menu-list {
+  display: flex;
+}
+
+.menu-link {
+  color: #212121;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  cursor: pointer;
+  color: #2196f3;
+}
+
+.menu-contact {
+  display: flex;
+}
+
+.contact-item {
+  color: #757575;
+}
+
+.contact-item:hover,
+.contact-item:focus {
+  cursor: pointer;
+  color: #2196f3;
+}
+
+.webstudio {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #000000;
+}
+
+.webstudio span {
+  color: #2196f3;
+}
+
+.bussines {
+  background: #2f303a;
+}
+
+.bussines-h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  /* or 136% */
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.button-buy {
+  /* Добавить стиль по центру */
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: #2196f3;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.button-buy:hover,
+.button-buy:focus {
+  cursor: pointer;
+  /* Незнаю чи треба щось додавати */
+}
+
+.bussines-list {
+  display: flex;
+}
+
+.bussines-advantages-h {
+  font-weight: bold;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.bussines-advantages-p {
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.work-list {
+  display: flex;
+}
+
+.work > h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.team {
+  background: #f5f4fa;
+}
+
+.team-list {
+  display: flex;
+}
+
+.team > h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.team > h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.team p {
+  font-size: 16px;
+  line-height: 1.18;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.address {
+  font-style: normal;
+}
+
+.footer-container {
+  background: #2f303a;
+}
+
+.footer-contact-item {
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.location {
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+/* Page portfolio*/
+.portfolio-button {
+  display: flex;
+}
+
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  color: #ffffff;
+  background: #2196f3;
+  /* shadow-middle */
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.project-list {
+  display: flex;
+}
+
+.project-list > h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.project-list > p {
+  font-size: 16px;
+  line-height: 1.875;
+  /* identical to box height, or 187% */
+  letter-spacing: 0.03em;
+  color: #757575;
+}
