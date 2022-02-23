@@ -11,11 +11,12 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+ul {
+  list-style: none;
+}
 
 body {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: normal;
+  font-family: 'Roboto', 'sans-serif';
   font-size: 14px;
 }
 
@@ -24,6 +25,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   display: flex;
+  text-decoration: none;
 }
 .menu-list {
   display: flex;
@@ -31,6 +33,7 @@ body {
 
 .menu-link {
   color: #212121;
+  text-decoration: none;
 }
 
 .menu-link:hover,
@@ -45,6 +48,7 @@ body {
 
 .contact-item {
   color: #757575;
+  text-decoration: none;
 }
 
 .contact-item:hover,
@@ -55,10 +59,10 @@ body {
 
 .webstudio {
   font-family: 'Raleway';
-  font-style: normal;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
+  text-decoration: none;
   color: #000000;
 }
 
@@ -82,6 +86,7 @@ body {
 }
 .button-buy {
   /* Добавить стиль по центру */
+  font-family: inherit;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.875;
@@ -121,7 +126,7 @@ body {
   display: flex;
 }
 
-.work > h2 {
+.work-h2 {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
@@ -138,7 +143,7 @@ body {
   display: flex;
 }
 
-.team > h2 {
+.team-h2 {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
@@ -147,7 +152,7 @@ body {
   color: #212121;
 }
 
-.team > h3 {
+.team-h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -157,7 +162,7 @@ body {
   color: #212121;
 }
 
-.team p {
+.team-p {
   font-size: 16px;
   line-height: 1.18;
   /* identical to box height */
@@ -174,18 +179,24 @@ body {
   background: #2f303a;
 }
 
-.footer-contact-item {
-  line-height: 1.71;
-  /* or 171% */
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+.address > .webstudio {
+  color: #ffffff;
 }
 
 .location {
+  text-decoration: none;
   line-height: 1.71;
   /* or 171% */
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+
+.footer-contact-item {
+  text-decoration: none;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* Page portfolio*/
@@ -194,6 +205,7 @@ body {
 }
 
 .button {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
@@ -214,9 +226,10 @@ body {
 }
 .project-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
-.project-list > h3 {
+.project-h3 {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -224,7 +237,7 @@ body {
   letter-spacing: 0.06em;
   color: #212121;
 }
-.project-list > p {
+.project-p {
   font-size: 16px;
   line-height: 1.875;
   /* identical to box height, or 187% */
