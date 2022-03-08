@@ -20,6 +20,59 @@ body {
   font-size: 14px;
 }
 
+/*Button*/
+/* Общий стиль кнопок */
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  text-align: center;
+}
+.button:hover,
+.button:focus {
+  cursor: pointer;
+}
+
+/*Кнопка на главной странице */
+.button-buy {
+  font-weight: bold;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: #2196f3;
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+/*Кнопка на странице Портфолио*/
+
+.button.btn-portf {
+  font-weight: 500;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+  color: #212121;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+.btn-portf:hover,
+.btn-portf:focus {
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/**/
+.curent {
+}
+
+/*Text*/
+.text {
+  letter-spacing: 0.03em;
+}
+
+/*Page Studio*/
+
+/*Header*/
 .header-container {
   font-weight: 500;
   line-height: 1.14;
@@ -36,12 +89,6 @@ body {
   text-decoration: none;
 }
 
-.menu-link:hover,
-.menu-link:focus {
-  cursor: pointer;
-  color: #2196f3;
-}
-
 .menu-contact {
   display: flex;
 }
@@ -49,12 +96,6 @@ body {
 .contact-item {
   color: #757575;
   text-decoration: none;
-}
-
-.contact-item:hover,
-.contact-item:focus {
-  cursor: pointer;
-  color: #2196f3;
 }
 
 .webstudio {
@@ -70,6 +111,8 @@ body {
   color: #2196f3;
 }
 
+/*Section bussines*/
+
 .bussines {
   background: #2f303a;
 }
@@ -78,50 +121,29 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  /* or 136% */
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-}
-.button-buy {
-  /* Добавить стиль по центру */
-  font-family: inherit;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  background: #2196f3;
-  align-items: center;
-  text-align: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-.button-buy:hover,
-.button-buy:focus {
-  cursor: pointer;
-  /* Незнаю чи треба щось додавати */
 }
 
 .bussines-list {
   display: flex;
 }
 
-.bussines-advantages-h {
+.advantages-h {
   font-weight: bold;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
 }
 
-.bussines-advantages-p {
+.advantages-p {
   line-height: 1.71;
-  /* or 171% */
-  letter-spacing: 0.03em;
   color: #757575;
 }
 
+/*Section work*/
 .work-list {
   display: flex;
 }
@@ -131,9 +153,10 @@ body {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
   color: #212121;
 }
+
+/*Section work*/
 
 .team {
   background: #f5f4fa;
@@ -148,7 +171,6 @@ body {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-  letter-spacing: 0.03em;
   color: #212121;
 }
 
@@ -156,18 +178,14 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  /* identical to box height */
   text-align: center;
-  letter-spacing: 0.03em;
   color: #212121;
 }
 
 .team-p {
   font-size: 16px;
   line-height: 1.18;
-  /* identical to box height */
   text-align: center;
-  letter-spacing: 0.03em;
   color: #757575;
 }
 
@@ -186,7 +204,6 @@ body {
 .location {
   text-decoration: none;
   line-height: 1.71;
-  /* or 171% */
   letter-spacing: 0.03em;
   color: #ffffff;
 }
@@ -194,9 +211,20 @@ body {
 .footer-contact-item {
   text-decoration: none;
   line-height: 1.71;
-  /* or 171% */
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.menu-link:hover,
+.menu-link:focus,
+.contact-item:hover,
+.contact-item:focus,
+.location:hover,
+.location:focus,
+.footer-contact-item:hover,
+.footer-contact-item:focus {
+  cursor: pointer;
+  color: #2196f3;
 }
 
 /* Page portfolio*/
@@ -204,26 +232,6 @@ body {
   display: flex;
 }
 
-.button {
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.625;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-  background: #f5f4fa;
-  border-radius: 4px;
-}
-.button:hover,
-.button:focus {
-  cursor: pointer;
-  color: #ffffff;
-  background: #2196f3;
-  /* shadow-middle */
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
 .project-list {
   display: flex;
   flex-wrap: wrap;
@@ -233,14 +241,11 @@ body {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
-  /* identical to box height, or 200% */
   letter-spacing: 0.06em;
   color: #212121;
 }
 .project-p {
   font-size: 16px;
   line-height: 1.875;
-  /* identical to box height, or 187% */
-  letter-spacing: 0.03em;
   color: #757575;
 }
